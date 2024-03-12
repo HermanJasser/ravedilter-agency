@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Roboto+Slab:wght@100..900&display=swap');
+/***************
+    general
+****************/
+:root {
+        --light-green: #A1EC99;
+        --brown: #4E2510;
+        --white: #ffffff;
+        --cinzel: "Cinzel", serif;
+        --roboto-slab: "Roboto Slab", serif;;
+        --inline-margin-phone: 40px;
+        --inline-margin-tablet-desktop: 60px;
+        --inline-margin-big-desktop: 150px;
+        --max-width: 1400px;
+      }
+
+h1, h2, h3, h4{
+    font-family: var(--cinzel);
+}
+
+p, a{
+    font-family: var(--roboto-slab);
+    margin: 0;
+    font-size: 20px;
+}
+
+/***************
+    index side
+****************/
+
+/***************
+    historie
+****************/
+
+/***************
+    menu
+****************/
+
+/***************
+    kontakt oss
+****************/
+
+/***************
+    jukeboks
+****************/
+
+
+
+/*phone media*/
+
+@media screen and (min-width: 576px){
+
+}
+
+
+/*liten desktop*/
+@media screen and (min-width: 768px){
+
+}
+
+
+/*stor desktop*/
+@media screen and (min-width: 1100px){
+
+}
+
+   
