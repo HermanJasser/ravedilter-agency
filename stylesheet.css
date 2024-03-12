@@ -18,11 +18,37 @@ h1, h2, h3, h4{
     font-family: var(--cinzel);
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+    min-height: 100vh;
+}
+
+
 p, a{
     font-family: var(--roboto-slab);
     margin: 0;
     font-size: 20px;
 }
+/***************
+     Header
+****************/
+header {
+    background-image: url(../images/Bg_brown.png);
+    background-size: 100%;
+    background-repeat: no-repeat center;
+    background-attachment: fixed;
+    height: 114px;  
+}
+
+
+
+/***************
+     Footer
+****************/
 
 /***************
     index side
