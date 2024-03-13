@@ -44,6 +44,9 @@ header {
 }
 
 .header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     
 }
 
@@ -52,6 +55,21 @@ header img {
 }
 
 
+/***************
+      Nav
+****************/
+
+.hamburger {
+    display: block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    background-color: red;
+}
 
 /***************
      Footer
