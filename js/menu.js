@@ -59,8 +59,9 @@ const shotsApi = `https://6etbe3og.api.sanity.io/v2022-03-07/data/query/producti
 getApi(shotsApi, shotsCont, listDrinks);
 
 const cocktailsCont = document.getElementById("cocktails").querySelector("div");
-const cocktailsApi = `https://6etbe3og.api.sanity.io/v2022-03-07/data/query/production?query=*%5B_type+%3D%3D+%27cocktails%27%5D%7B%0A++product%2C+des%2C+active+%0A%7D`;
-getApi(cocktailsApi, cocktailsCont, listDrinks);
+const cocktailsPrisCont = document.querySelector(".cocktails-h2-pris")
+const cocktailsApi = `https://6etbe3og.api.sanity.io/v2022-03-07/data/query/production?query=*%5B_type+%3D%3D+%27cocktails%27%5D%7B%0A++product%2C+des%2C+price%2C+active%0A%7D`;
+getApi(cocktailsApi, cocktailsCont, listcocktails);
 
 /*const Cont = document.getElementById("").querySelector("div");
 const Api = ``;
@@ -79,6 +80,7 @@ async function getApi(api, container, listFunction) {
         const data = await response.json();
         //console.log(data);
         let apiResult = data.result;
+        //console.log(apiResult);
         const activeFiltered = apiResult.filter((obj)=>{
             return obj.active === null || obj.active === true;
         });
@@ -94,14 +96,54 @@ function listDrinks(api, output) {
     let drinkContainer = "";
     for (let drink of api) {
         if (drink.des){
-            drinkContainer += `<div class="produkt-og-pris"><p class="produkt-navn">${drink.product}</p>
-            <p>${drink.des}</p></div>`;
+
+            drinkContainer += `<div class="cocktails-item-container">
+            <div class="produkt-og-des">
+            <p class="produkt-navn">${drink.product}</p>
+            <p>${drink.des}</p>
+            </div>
+            <p class="cocktails-pris">${drink.price} kr</p>
+            </div>`;
         } else if (drink.price !== null){
-      drinkContainer += `<div class="produkt-og-pris"><p class="produkt-navn">${drink.product}</p>
-      <p>${drink.price} kr</p></div>`;
+      drinkContainer += `<div class="produkt-og-pris">
+      <p class="produkt-navn">${drink.product}</p>
+      <p>${drink.price} kr</p>
+      </div>`;
     } else{
-        drinkContainer += `<div class="produkt-og-pris"><p class="produkt-navn">${drink.product}</p>
-      <p></p></div>`;
+        drinkContainer += `<div class="produkt-og-pris">
+        <p class="produkt-navn">${drink.product}</p>
+      <p></p>
+      </div>`;
     }}
     output.innerHTML = drinkContainer;
   }
+
+
+
+  function listcocktails(api, output) {
+    output.innerHTML = "";
+    let drinkContainer = "";
+    checkIfSamePrice(api);
+
+
+    for (let drink of api) {
+            drinkContainer += `<div class="cocktails-item-container">
+            <div class="produkt-og-des">
+            <p class="produkt-navn">${drink.product}</p>
+            <p>${drink.des}</p>
+            </div>
+            <p class="cocktails-pris">${drink.price} kr</p>
+            </div>`;
+    }
+    output.innerHTML = drinkContainer;
+  }
+
+
+function checkIfSamePrice(api){
+    console.log(api)
+  let firstPrice = api[0];
+  console.log(firstPrice);
+  
+  }
+
+

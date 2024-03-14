@@ -161,11 +161,22 @@ header img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .produkt-navn{
     color: var(--light-green);
+}
+
+.cocktails-pris{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cocktails-item-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 
