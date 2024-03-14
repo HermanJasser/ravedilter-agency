@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400..900&family=Roboto+Slab:wght@100..900&display=swap');
 /***************
     general
 ****************/
@@ -8,6 +8,7 @@
         --white: #ffffff;
         --cinzel: "Cinzel", serif;
         --roboto-slab: "Roboto Slab", serif;;
+        --bebas-neue: "Bebas Neue", sans-serif;;
         --inline-margin-phone: 40px;
         --inline-margin-tablet-desktop: 60px;
         --inline-margin-big-desktop: 150px;
@@ -20,7 +21,7 @@ h1, h2, h3, h4{
 }
 
 h1{
-    font-size: 50px;
+    font-size: 40px;
 }
 
 body {
@@ -80,10 +81,54 @@ header img {
     display: flex;
     align-items: center;
     flex-direction: column;
+    max-width: 600px;
+    padding: 0 var(--inline-margin-phone);
+    margin: 0 auto;
 }
 
-.drink-kategori{
+.drink-kategorier{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px 30px;
+    margin-bottom: 30px;
 }
+
+.drink-kategorier > a{
+    color: var(--light-green);
+    text-decoration: none;
+    font-family:var(--bebas-neue);
+    font-size: 30px;
+}
+
+.drink-kategorier > a:hover{
+    text-decoration: underline;
+}
+
+.enkel-kategorier{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.enkel-kategorier > h2{
+    border-bottom: solid 2px var(--white);
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.produkt-og-pris{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.produkt-navn{
+    color: var(--light-green);
+}
+
+
+
 
 /***************
     kontakt oss
