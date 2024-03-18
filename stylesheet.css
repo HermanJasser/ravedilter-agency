@@ -58,6 +58,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+
     
 }
 
@@ -70,10 +71,6 @@ header img {
 /***************
       Nav
 ****************/
-
-.desktop-nav {
-    display: none;
-}
 
 .hamburger {
     display: block;
@@ -272,12 +269,10 @@ header {
 
 .header-container {
     padding: 0 30px;
-    
 }
 
 header img {
     padding-top: 15px;
-    width: 142px;
 }
 
 
@@ -303,9 +298,14 @@ header img {
     transition: none;
     z-index: 10;
 }
+.mobile-nav.is-active {
+    left: 250px;
+    overflow: visible;
+  }
+
 
 .mobile-nav a {
-    font-size: 24px;
+    font-size: 22px;
 
 }
 
