@@ -49,17 +49,21 @@ header {
     background-size: 100%;
     background-repeat: no-repeat center;
     height: 114px;  
+    z-index: 99;
 }
 
 .header-container {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
     
 }
 
 header img {
-    width: 142px;
+    padding-top: 10px;
+    width: 122px;
 }
 
 
@@ -67,15 +71,20 @@ header img {
       Nav
 ****************/
 
+.desktop-nav {
+    display: none;
+}
+
 .hamburger {
     display: block;
-    width: 40px;
+    width: 50px;
     height: 35px;
     cursor: pointer;
     appearance: none;
     background: none;
     outline: none;
     border: none;
+    padding-bottom: 70px;
 }
 
 .hamburger .bar, .hamburger::after, .hamburger::before {
@@ -100,6 +109,47 @@ header img {
 
 .hamburger.is-active .bar {
     opacity: 0;
+}
+
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    padding-top: 140px;
+    background-color: var(--brown);
+    text-align: center;
+    transition: 0.5s;
+
+}
+
+.mobile-nav.is-active {
+    left: 0;
+    overflow: hidden;
+}
+
+
+
+
+.mobile-nav a {
+    margin: 10px 0;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 28px;
+
+}
+
+.mobile-nav a:hover {
+    text-decoration: underline;
+
+}
+
+.mobile-nav .active-nav {
+    color: var(--light-green);
+    text-decoration: underline;
 }
 
 /***************
