@@ -1,18 +1,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 //Hamburger menu//
 
 window.onload = function () {
