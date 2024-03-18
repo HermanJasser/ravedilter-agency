@@ -115,14 +115,15 @@ header img {
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 0;
+    top: 114px;
     left: 100%;
     width: 100%;
     height: 100%;
-    padding-top: 140px;
+    padding-top: 50px;
     background-color: var(--brown);
     text-align: center;
-    transition: 0.5s;
+    transition: 0.2s;
+    z-index: -99;
 
 }
 
@@ -257,6 +258,52 @@ header img {
 
 /*stor desktop*/
 @media screen and (min-width: 1100px){
+
+/***************
+     Header
+****************/
+header {
+    background-image: url(./media/img/Bg_brown.png);
+    background-size: 100%;
+    background-repeat: no-repeat center;
+    height: 114px;  
+    z-index: 99;
+}
+
+.header-container {
+    padding: 0 30px;
+    
+}
+
+header img {
+    padding-top: 15px;
+    width: 142px;
+}
+
+
+/***************
+      Nav
+****************/
+
+.hamburger {
+    display: none;
+}
+
+.mobile-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 40px;
+    left: 250px;
+    width: 80%;
+    height: 0;
+    padding: 0;
+    background-color: transparent;
+    transition: none;
+    z-index: 10;
+
+}
 
 }
 
