@@ -302,6 +302,10 @@ header img {
     background-color: transparent;
     transition: none;
     z-index: 10;
+}
+
+.mobile-nav a {
+    font-size: 24px;
 
 }
 
