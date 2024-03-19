@@ -225,9 +225,11 @@ header img {
 
 .cocktails-item-container{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     margin-bottom: 30px;
 }
+
 
 
 
@@ -275,7 +277,9 @@ iframe {
 /*phone media*/
 
 @media screen and (min-width: 576px){
-
+    .cocktails-item-container{
+        flex-direction: row;
+    }
 }
 
 
