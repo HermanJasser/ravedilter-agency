@@ -124,26 +124,47 @@ function listDrinks(api, output) {
     output.innerHTML = "";
     let drinkContainer = "";
     checkIfSamePrice(api);
+    console.log(checkIfSamePrice(api))
 
-
+    if(checkIfSamePrice(api) == true){
     for (let drink of api) {
             drinkContainer += `<div class="cocktails-item-container">
-            <div class="produkt-og-des">
             <p class="produkt-navn">${drink.product}</p>
             <p>${drink.des}</p>
             </div>
-            <p class="cocktails-pris">${drink.price} kr</p>
-            </div>`;
+            `;
     }
     output.innerHTML = drinkContainer;
+    cocktailsPrisCont.innerHTML = `${api[0].price} kr`
+
+  } else {
+    for (let drink of api) {
+      drinkContainer += `<div class="cocktails-item-container">
+      <div class="produkt-og-des">
+      <p class="produkt-navn">${drink.product}</p>
+      <p>${drink.des}</p>
+      </div>
+      <p class="cocktails-pris">${drink.price} kr</p>
+      </div>`;
+}
+output.innerHTML = drinkContainer;
+  }
   }
 
 
-function checkIfSamePrice(api){
-    console.log(api)
-  let firstPrice = api[0];
-  console.log(firstPrice);
-  
+
+function checkIfSamePrice(products){
+   //console.log(products);
+    let firstPrice = products[0].price;
+  //console.log(firstPrice);
+    for(let item of products){
+      //console.log(item.price);
+      if(firstPrice !== item.price){
+        return false;}
+    }
+  return true;
   }
+
+ 
 
 
