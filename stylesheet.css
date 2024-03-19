@@ -249,12 +249,15 @@ header img {
     font-size: 28px;
 }
 
-.p-space {
-    margin-bottom: 20px;
-}
 .kontakt-main h2 {
     margin-top: 40px;
+    font-size: 18px;
 }
+
+.kontakt-main p {
+    font-size: 16px;
+}
+
 
 .green-p {
     color: var(--light-green);
@@ -280,6 +283,36 @@ iframe {
     .cocktails-item-container{
         flex-direction: row;
     }
+
+/***************
+  kontakt oss
+****************/
+
+.kontakt-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: var(--inline-margin-tablet-desktop);
+}
+
+.kontakt-main h1 {
+    font-size: 32px;
+}
+
+.kontakt-main p {
+    font-size: 20px;
+}
+
+.kontakt-main h2 {
+    font-size: 24px;
+}
+
+
+iframe {
+    width: 500px;
+    height: 500px;
+    margin: 40px 0;
+}
 }
 
 
@@ -309,16 +342,7 @@ iframe {
     font-size: 28px;
 }
 
-.p-space {
-    margin-bottom: 20px;
-}
-.kontakt-main h2 {
-    margin-top: 40px;
-}
 
-.green-p {
-    color: var(--light-green);
-}
 
 iframe {
     width: 600px;
@@ -401,9 +425,6 @@ header img {
     font-size: 40px;
 }
 
-.p-space {
-    margin-bottom: 20px;
-}
 .kontakt-main h2 {
     margin-top: 50px;
 }
