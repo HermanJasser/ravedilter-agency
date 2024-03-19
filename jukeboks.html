@@ -1,39 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jukeboks</title>
-    <link rel="stylesheet" href="./stylesheet.css">
+    <link rel="stylesheet" href="./stylesheet.css" />
     <script src="./js/jukeboks.js" module="type"></script>
     <script src="./js/utils.js" type="module"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="header-container">
-          <a href="./index.html"
-            ><img
-              src="./media/img/logo farger_png 1Rævdilter_logo.png"
-              alt="logo"
+      <div class="header-container">
+        <a href="./index.html"
+          ><img
+            src="./media/img/logo farger_png 1Rævdilter_logo.png"
+            alt="logo"
+        /></a>
+        <button class="hamburger">
+          <div class="bar"></div>
+        </button>
+        <nav class="mobile-nav">
+          <a href="./index.html">Hjem</a>
+          <a href="./historie.html">Historie</a>
+          <a href="./kontaktoss.html">Kontakt</a>
+          <a href="./menu.html">Meny</a>
+          <a href="./jukeboks.html" class="active-nav">Jukeboks</a>
+        </nav>
+      </div>
+    </header>
+    <main></main>
+    <footer>
+      <div class="footer-container">
+        <img
+          src="./media/img/logo farger_png 1Rævdilter_logo.png"
+          alt="rævedilter logo"
+        />
+        <div class="footer-adresse-kontakt">
+          <h2>Adresse</h2>
+          <p>Christies gate 9</p>
+          <p>5015 Bergen</p>
+          <h2 class="footer-kontakt-h2">Kontakt</h2>
+          <p>raevedilterbar@gmail.com</p>
+          <a href="https://www.facebook.com/profile.php?id=100085627784130"
+            ><img src="" alt="facebook icon"
           /></a>
-          <button class="hamburger">
-            <div class="bar"></div>
-          </button>
-          <nav class="mobile-nav">
-            <a href="./index.html">Hjem</a>
-            <a href="./historie.html">Historie</a>
-            <a href="./kontaktoss.html">Kontakt</a>
-            <a href="./menu.html">Meny</a>
-            <a href="./jukeboks.html" class="active-nav">Jukeboks</a>
-          </nav>
         </div>
-      </header>
-      <main>
-
-      </main>
-      <footer>
-
-      </footer>
-    
-</body>
+        <div class="footer-apningstider">
+          <h2>Åpningstider</h2>
+          <p>Mandag: Stengt</p>
+          <p>Tirsdag: 18.00-01.00</p>
+          <p>Onsdag: 18.00-01.00</p>
+          <p>Torsdag: 18.00-01.00</p>
+          <p>Friday: 16.00-02.30</p>
+          <p>Lørdag: 16.00-02.30</p>
+          <p>Søndag: 16.00-02.30</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
