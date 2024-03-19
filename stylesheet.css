@@ -272,6 +272,19 @@ footer{
     margin-bottom: 30px;
 }
 
+.meny-pdf{
+    display: flex;
+}
+
+.meny-pdf > *{
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-family: var(--roboto-slab);
+}
+
+.meny-pdf > a:hover{
+    color: var(--light-green);
+}
 
 
 
