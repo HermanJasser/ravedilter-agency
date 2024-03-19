@@ -18,6 +18,7 @@
 h1, h2, h3, h4{
     font-family: var(--cinzel);
     color: var(--white);
+    margin: 0;
 }
 
 h1{
@@ -57,7 +58,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 var(--inline-margin-phone);
     max-width: var(--max-width);
     margin: 0 auto;
 
@@ -67,6 +68,7 @@ header {
 header img {
     padding-top: 10px;
     width: 122px;
+    height: 148px;
 }
 
 
@@ -155,6 +157,43 @@ header img {
 /***************
      Footer
 ****************/
+footer{
+    background-image: url(./media/img/Bg_brown.png);
+    background-size:cover;
+    background-repeat: no-repeat center;
+ 
+
+}
+.footer-container{
+    padding: 30px var(--inline-margin-phone);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: var(--max-width);
+    
+}
+
+
+.footer-container > img{
+    width: 122px;
+    height: 148px;
+}
+
+.footer-container > div{
+    text-align: center;
+}
+
+.footer-adresse-kontakt, .footer-container > img{
+    margin: 0 auto 30px auto;
+}
+
+.footer-container > div > h2{
+    margin-bottom: 5px;
+}
+
+.footer-kontakt-h2{
+    margin-top: 30px;
+}
 
 /***************
     index side
@@ -175,6 +214,10 @@ header img {
     max-width: 600px;
     padding: 0 var(--inline-margin-phone);
     margin: 0 auto;
+}
+
+.menu-main > h1{
+    margin: 50px 0 30px 0;
 }
 
 .drink-kategorier{
@@ -280,7 +323,17 @@ iframe {
     .cocktails-item-container{
         flex-direction: row;
     }
+
+    .header-container{
+        padding: 0 var(--inline-margin-tablet-desktop)
+    }
+
+    .footer-container{
+        padding: 30px var(--inline-margin-tablet-desktop);
+    }
 }
+
+
 
 
 /*liten desktop*/
@@ -326,6 +379,23 @@ iframe {
     margin: 40px 0;
 }
 
+/***************
+  footer
+****************/
+.footer-container{
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.footer-container > div{
+    text-align:start;
+}
+
+.footer-container > div, .footer-container > img{
+    margin: 0;
+}
+
 }
 
 
@@ -344,7 +414,7 @@ header {
 }
 
 .header-container {
-    padding: 0 30px;
+    padding: 0 var(--inline-margin-big-desktop);
 }
 
 header img {
@@ -383,6 +453,13 @@ header img {
 .mobile-nav a {
     font-size: 22px;
 
+}
+/***************
+    footer
+****************/
+
+.footer-container{
+    padding: 30px var(--inline-margin-big-desktop);
 }
 
 
