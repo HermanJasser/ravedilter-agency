@@ -124,7 +124,7 @@ function listDrinks(api, output) {
     output.innerHTML = "";
     let drinkContainer = "";
     checkIfSamePrice(api);
-    console.log(checkIfSamePrice(api))
+    //console.log(checkIfSamePrice(api))
 
     if(checkIfSamePrice(api) == true){
     for (let drink of api) {
