@@ -486,6 +486,81 @@ iframe {
     margin: 40px 0;
 }
 
+/*****************
+    Historie
+*****************/
+.hero-historie > div{
+    overflow: hidden;
+    max-height: 1000px;
+}
+
+.hero-historie > h1{
+    z-index: 1;
+    text-wrap: nowrap;
+    position: absolute;
+    font-size: 70px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-historie > div > img {
+    width: 100%;
+    opacity: 80%;
+}
+
+.historie-card-bg{
+    background-image: url(media/img/Bg_brown.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.historie-card-direction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 60px 0 60px;
+}
+
+.historie-card-info > p{
+    max-width: 800px;
+}
+
+.historie-card-img{
+    overflow: hidden;
+    max-width: 500px;
+}
+
+.historie-card-img > img{
+    width: 100%;
+}
+
+.historie-wide-img{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 350px;
+}
+
+.historie-wide-img > img{
+    width: 100%;
+}
+
+.historie-box{
+    display: flex;
+    justify-content: center;
+    background-image: url(media/img/Bg_brown.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.historie-box > p{
+    max-width: 1000px;
+    padding: 40px;
+    margin: 0 60px 0 60px;
+}
+
 /***************
   footer
 ****************/
