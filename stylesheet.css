@@ -201,23 +201,14 @@ footer{
     historie
 ****************/
 
-.hero-historie > div{
-    overflow: hidden;
-}
-
-.hero-historie > h1{
-    z-index: 1;
-    text-wrap: nowrap;
-    position: absolute;
-    font-size: 40px;
-    top: 20vh;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.hero-historie > div > img {
-    width: 100%;
-    opacity: 80%;
+.hero-historie{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(media/img/Rævedilter-1122608.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
 }
 
 .historie-card-bg{
@@ -489,24 +480,14 @@ iframe {
 /*****************
     Historie
 *****************/
-.hero-historie > div{
-    overflow: hidden;
-    max-height: 1000px;
-}
-
-.hero-historie > h1{
-    z-index: 1;
-    text-wrap: nowrap;
-    position: absolute;
-    font-size: 70px;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.hero-historie > div > img {
-    width: 100%;
-    opacity: 80%;
+.hero-historie{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(media/img/Rævedilter-1122608.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
 }
 
 .historie-card-bg{
@@ -647,24 +628,14 @@ header img {
 /*****************
     Historie
 *****************/
-.hero-historie > div{
-    overflow: hidden;
-    max-height: 1000px;
-}
-
-.hero-historie > h1{
-    z-index: 1;
-    text-wrap: nowrap;
-    position: absolute;
-    font-size: 100px;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.hero-historie > div > img {
-    width: 100%;
-    opacity: 80%;
+.hero-historie{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(media/img/Rævedilter-1122608.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
 }
 
 .historie-card-bg{
