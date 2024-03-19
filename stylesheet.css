@@ -206,9 +206,10 @@ footer{
 }
 
 .hero-historie > h1{
+    z-index: 1;
     text-wrap: nowrap;
     position: absolute;
-    font-size: 50px;
+    font-size: 40px;
     top: 20vh;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -216,6 +217,7 @@ footer{
 
 .hero-historie > div > img {
     width: 100%;
+    opacity: 80%;
 }
 
 .historie-card-bg{
@@ -576,16 +578,18 @@ header img {
 }
 
 .hero-historie > h1{
+    z-index: 1;
     text-wrap: nowrap;
     position: absolute;
     font-size: 100px;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .hero-historie > div > img {
     width: 100%;
+    opacity: 80%;
 }
 
 .historie-card-bg{
