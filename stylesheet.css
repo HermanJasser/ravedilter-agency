@@ -596,7 +596,7 @@ header img {
 .mobile-nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     position: absolute;
     top: 40px;
     left: 25%;
