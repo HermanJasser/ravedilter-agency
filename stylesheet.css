@@ -121,7 +121,7 @@ header img {
     padding-top: 50px;
     background-color: var(--brown);
     text-align: center;
-    transition: 0.2s;
+    
     z-index: -99;
 
 }
@@ -129,6 +129,7 @@ header img {
 .mobile-nav.is-active {
     left: 0;
     overflow: hidden;
+    transition: 0.4s;
 }
 
 
