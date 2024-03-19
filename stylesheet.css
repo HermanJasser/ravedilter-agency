@@ -201,6 +201,67 @@ footer{
     historie
 ****************/
 
+.hero-historie{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(media/img/Rævedilter-1122608.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+}
+
+.historie-card-bg{
+    background-image: url(media/img/Bg_brown.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.historie-card-direction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 40px 0 40px;
+    padding: 0 0 40px 0;
+}
+
+.historie-card-info{
+    padding-top: 20px;
+}
+
+.historie-card-img{
+    margin: 20px;
+    overflow: hidden;
+    max-width: 500px;
+}
+
+.historie-card-img > img{
+    width: 100%;
+}
+
+.historie-wide-img{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 150px;
+}
+
+.historie-wide-img > img{
+    width: 100%;
+}
+
+.historie-box{
+    background-image: url(media/img/Bg_brown.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.historie-box > p{
+    padding: 40px;
+    margin: 0 40px 0 40px;
+}
+
 /***************
     menu
 ****************/
@@ -416,6 +477,71 @@ iframe {
     margin: 40px 0;
 }
 
+/*****************
+    Historie
+*****************/
+.hero-historie{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(media/img/Rævedilter-1122608.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+.historie-card-bg{
+    background-image: url(media/img/Bg_brown.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.historie-card-direction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 60px 0 60px;
+}
+
+.historie-card-info > p{
+    max-width: 800px;
+}
+
+.historie-card-img{
+    overflow: hidden;
+    max-width: 500px;
+}
+
+.historie-card-img > img{
+    width: 100%;
+}
+
+.historie-wide-img{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 350px;
+}
+
+.historie-wide-img > img{
+    width: 100%;
+}
+
+.historie-box{
+    display: flex;
+    justify-content: center;
+    background-image: url(media/img/Bg_brown.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.historie-box > p{
+    max-width: 1000px;
+    padding: 40px;
+    margin: 0 60px 0 60px;
+}
+
 /***************
   footer
 ****************/
@@ -470,11 +596,11 @@ header img {
 .mobile-nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     position: absolute;
     top: 40px;
-    left: 20%;
-    width: 80%;
+    left: 25%;
+    width: 60%;
     height: 0;
     padding: 0;
     background-color: transparent;
@@ -482,7 +608,7 @@ header img {
     z-index: 10;
 }
 .mobile-nav.is-active {
-    left: 20%;
+    left: 25%;
     overflow: visible;
   }
 
@@ -499,6 +625,70 @@ header img {
     padding: 30px var(--inline-margin-big-desktop);
 }
 
+/*****************
+    Historie
+*****************/
+.hero-historie{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(media/img/Rævedilter-1122608.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+.historie-card-bg{
+    background-image: url(media/img/Bg_brown.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.historie-card-direction{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 150px 0 150px;
+}
+
+.historie-card-info > p{
+    max-width: 800px;
+}
+
+.historie-card-img{
+    overflow: hidden;
+    max-width: 500px;
+}
+
+.historie-card-img > img{
+    width: 100%;
+}
+
+.historie-wide-img{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 350px;
+}
+
+.historie-wide-img > img{
+    width: 100%;
+}
+
+.historie-box{
+    display: flex;
+    justify-content: center;
+    background-image: url(media/img/Bg_brown.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.historie-box > p{
+    max-width: 1000px;
+    padding: 40px;
+    margin: 0 150px 0 150px;
+}
 
 /***************
     kontakt oss
