@@ -167,4 +167,28 @@ function checkIfSamePrice(products){
 
  
 
+let menyPdf = document.querySelector(".meny-pdf");
+
+async function getDrinkMenuPdf(container){
+  try{
+    let api = `https://6etbe3og.api.sanity.io/v2022-03-07/data/query/production?query=*%5B_type+%3D%3D+%27drink-meny%27%5D%7B%0A++%22drinkMenyURL%22%3A+drinkMenyPdf.asset-%3Eurl%0A%7D`;
+    const response = await fetch(api);
+    if (!response.ok) throw new Error(`HTTP error! ${response.status}`);
+    const data = await response.json();
+    let apiResult = data.result;
+    //console.log(apiResult);
+    setPdf(apiResult);
+  } catch (error){
+    console.error("Error message: " + error)
+    container.innerHTML = `<p>Kan ikke finne noen pdf</p>`
+  }
+}
+
+getDrinkMenuPdf(menyPdf);
+
+function setPdf (api){
+  menyPdf.innerHTML = "";
+  console.log(api[0])
+    menyPdf.innerHTML = `<a class="link-meny-pdf" href="${api[0].drinkMenyURL}">Se menyen i PDF</a>`
+}
 
