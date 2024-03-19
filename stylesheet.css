@@ -473,7 +473,7 @@ header img {
     justify-content: space-evenly;
     position: absolute;
     top: 40px;
-    left: 250px;
+    left: 20%;
     width: 80%;
     height: 0;
     padding: 0;
@@ -482,7 +482,7 @@ header img {
     z-index: 10;
 }
 .mobile-nav.is-active {
-    left: 250px;
+    left: 20%;
     overflow: visible;
   }
 
