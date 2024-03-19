@@ -201,6 +201,74 @@ footer{
     historie
 ****************/
 
+.hero-historie > div{
+    overflow: hidden;
+}
+
+.hero-historie > h1{
+    text-wrap: nowrap;
+    position: absolute;
+    font-size: 50px;
+    top: 20vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-historie > div > img {
+    width: 100%;
+}
+
+.historie-card-bg{
+    background-image: url(media/img/Bg_brown.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.historie-card-direction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 40px 0 40px;
+    padding: 0 0 40px 0;
+}
+
+.historie-card-info{
+    padding-top: 20px;
+}
+
+.historie-card-img{
+    margin: 20px;
+    overflow: hidden;
+    max-width: 500px;
+}
+
+.historie-card-img > img{
+    width: 100%;
+}
+
+.historie-wide-img{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 150px;
+}
+
+.historie-wide-img > img{
+    width: 100%;
+}
+
+.historie-box{
+    background-image: url(media/img/Bg_brown.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.historie-box > p{
+    padding: 40px;
+    margin: 0 40px 0 40px;
+}
+
 /***************
     menu
 ****************/
@@ -486,6 +554,78 @@ header img {
     padding: 30px var(--inline-margin-big-desktop);
 }
 
+/*****************
+    Historie
+*****************/
+.hero-historie > div{
+    overflow: hidden;
+    max-height: 1000px;
+}
+
+.hero-historie > h1{
+    text-wrap: nowrap;
+    position: absolute;
+    font-size: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-historie > div > img {
+    width: 100%;
+}
+
+.historie-card-bg{
+    background-image: url(media/img/Bg_brown.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.historie-card-direction{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 150px 0 150px;
+}
+
+.historie-card-info > p{
+    max-width: 800px;
+}
+
+.historie-card-img{
+    overflow: hidden;
+    max-width: 500px;
+}
+
+.historie-card-img > img{
+    width: 100%;
+}
+
+.historie-wide-img{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 350px;
+}
+
+.historie-wide-img > img{
+    width: 100%;
+}
+
+.historie-box{
+    display: flex;
+    justify-content: center;
+    background-image: url(media/img/Bg_brown.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.historie-box > p{
+    max-width: 1000px;
+    padding: 40px;
+    margin: 0 150px 0 150px;
+}
 
 /***************
     kontakt oss
