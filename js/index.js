@@ -69,7 +69,7 @@ function populateAllDays(openingHours) {
   function toggleView(data) {
     daysContainer.innerHTML = ''; // Clear previous content
   
-    if (window.innerWidth > 767) {
+    if (window.innerWidth > 849) {
       populateAllDays(data);
     } else {
       populateCurrentDay(data);
