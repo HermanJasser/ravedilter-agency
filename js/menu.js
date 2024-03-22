@@ -188,7 +188,6 @@ getDrinkMenuPdf(menyPdf);
 
 function setPdf (api){
   menyPdf.innerHTML = "";
-  console.log(api[0])
-    menyPdf.innerHTML = `<a class="link-meny-pdf" href="${api[0].drinkMenyURL}">Se menyen i PDF</a>`
+    menyPdf.innerHTML = `<a class="link-meny-pdf" href="${api[0].drinkMenyURL}">Se menyen i PDF</a>`;
 }
 
