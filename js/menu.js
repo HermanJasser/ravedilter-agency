@@ -107,7 +107,7 @@ function listDrinks(api, output) {
         } else if (drink.price !== null){
       drinkContainer += `<div class="produkt-og-pris">
       <p class="produkt-navn">${drink.product}</p>
-      <p>${drink.price} kr</p>
+      <p class="drink-pris">${drink.price} kr</p>
       </div>`;
     } else{
         drinkContainer += `<div class="produkt-og-pris">
