@@ -396,6 +396,14 @@ footer{
     menu
 ****************/
 
+/*#scrollBtn {
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    z-index: 99;
+    cursor: pointer;
+}*/
+
 .menu-main{
     display: flex;
     align-items: center;
@@ -432,11 +440,24 @@ footer{
     width: 100%;
     margin-bottom: 30px;
 }
+.h2-med-icon{
+    display: flex;
+    flex-direction: row;
+    align-items:end
+}
+.drink-icon{
+    height: 50px;
+}
 
-.enkel-kategorier > h2{
-    border-bottom: solid 2px var(--white);
+.enkel-kategorier h2{
+   border-bottom: solid 2px var(--white);
     padding-bottom: 10px;
     text-align: center;
+    display: flex;
+    gap:5px;
+    align-items: end;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .produkt-og-pris{
@@ -444,6 +465,10 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 30px;
+}
+
+.drink-pris{
+    text-align: right;
 }
 
 .produkt-navn{
@@ -461,6 +486,10 @@ footer{
     justify-content: space-between;
     margin-bottom: 30px;
 }
+
+/*.cocktails-h2-pris{
+    color: var(--light-green);
+}/**/
 
 .meny-pdf{
     display: flex;
