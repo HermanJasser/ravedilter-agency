@@ -252,7 +252,7 @@ footer{
 }
 
 .cover_img_index{
-    background-image: url(media/img/jukeboks_wide.jpg);
+    background-image: url(media/img/jukeboks_wide.webp);
     background-position: right;
     background-size: cover;
     height: 300px;
@@ -335,7 +335,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(media/img/Rævedilter-1122608.jpg);
+    background-image: url(media/img/Rævedilter-1122608.webp);
     background-size: cover;
     background-position: center;
     height: 20vh;
@@ -560,7 +560,7 @@ iframe {
 .jukeboks-hero{
     width: 100%;
     height: 50vw;
-    background-image: url(./media/img/Jukeboks-fullsize.jpg);
+    background-image: url(./media/img/Jukeboks-fullsize.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -758,7 +758,7 @@ iframe {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(media/img/Rævedilter-1122608.jpg);
+    background-image: url(media/img/Rævedilter-1122608.webp);
     background-size: cover;
     background-position: center;
     height: 50vh;
@@ -992,7 +992,7 @@ header img {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(media/img/Rævedilter-1122608.jpg);
+    background-image: url(media/img/Rævedilter-1122608.webp);
     background-size: cover;
     background-position: center;
     height: 50vh;
