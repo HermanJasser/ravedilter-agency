@@ -396,13 +396,26 @@ footer{
     menu
 ****************/
 
-/*#scrollBtn {
+#scrollBtn {
+    display: none;
     position: fixed;
-    bottom: 100px;
-    right: 50px;
+    bottom: 20px;
+    right: 20px;
     z-index: 99;
+    background-color: var(--brown);
+    color: var(--light-green);
+    border: var(--light-green) solid 2px;
+    border-radius: 3px;
+    font-family: var(--bebas-neue);
+    font-size: 25px;
+    padding: 2px 3px 0 3px;
     cursor: pointer;
-}*/
+  }
+  
+  #scrollBtn:hover {
+   color: var(--white);
+   transform: scale(1.03);
+  }
 
 .menu-main{
     display: flex;

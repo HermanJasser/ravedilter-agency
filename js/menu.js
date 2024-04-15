@@ -196,3 +196,84 @@ function setPdf (api){
 
 
 
+
+/*Dette er for scroll functionen når du trykker på en av kategoriene*/
+
+document.addEventListener('DOMContentLoaded', function() {
+  const scrollLinks = document.querySelectorAll('.drink-kategorier *');
+
+  scrollLinks.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+      const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+      const middleOfWindow = window.innerHeight / 2;
+      const scrollDistance = targetPosition - middleOfWindow + (targetElement.offsetHeight / 2);
+      const startPosition = window.pageYOffset;
+      const distance = scrollDistance - startPosition;
+      const duration = 1000;
+
+      let startTime = null;
+
+      function animation(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const run = ease(timeElapsed, startPosition, distance, duration);
+        window.scrollTo(0, run);
+        if (timeElapsed < duration) requestAnimationFrame(animation);
+      }
+
+      function ease(t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return (c / 2) * t * t + b;
+        t--;
+        return (-c / 2) * (t * (t - 2) - 1) + b;
+      }
+
+      requestAnimationFrame(animation);
+    });
+  });
+});
+
+
+/*dette er for scroll op knappen*/
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("scrollBtn").style.display = "block";
+  } else {
+    document.getElementById("scrollBtn").style.display = "none";
+  }
+}
+
+function scrollToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("scrollBtn").style.display = "block";
+  } else {
+    document.getElementById("scrollBtn").style.display = "none";
+  }
+}
+
+function scrollToTop() {
+  const scrollTop = Math.max(
+    window.pageYOffset || 0,
+    document.documentElement.scrollTop,
+    document.body.scrollTop
+  );
+
+  if (scrollTop > 0) {
+    window.requestAnimationFrame(scrollToTop);
+    window.scrollTo(0, scrollTop - scrollTop / 8);
+  }
+}
