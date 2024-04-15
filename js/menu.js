@@ -191,3 +191,8 @@ function setPdf (api){
     menyPdf.innerHTML = `<a class="link-meny-pdf" href="${api[0].drinkMenyURL}">Se menyen i PDF</a>`;
 }
 
+
+
+
+
+
