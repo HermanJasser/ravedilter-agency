@@ -271,7 +271,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
 }
 
 .index-card > div{
@@ -280,7 +280,7 @@ footer{
 }
 
 .index-card-img > img{
-    width: 500px;
+    width: 300px;
 }
 
 .index-card-info{
@@ -303,14 +303,14 @@ footer{
 }
 
 .dbl-img > img{
-    width: 300px;
+    width: 200px;
 }
 
 .top-img{
     position: relative;
     z-index: 1;
     border-radius: 5px;
-    padding-right: 50px;
+    padding-right: 100px;
     filter: drop-shadow(4px 4px 5px #000000);
 }
 
@@ -725,6 +725,10 @@ iframe {
 
 .index-card{
     flex-direction: column;
+}
+
+.index-card-img > img{
+    width: 500px;
 }
 
 .index-card > div{
