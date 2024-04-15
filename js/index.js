@@ -20,7 +20,7 @@ async function getDays(container){
       toggleView(apiResult);
     } catch (error){
       console.error("Error message: " + error)
-      container.innerHTML = `<p>Kan ikke finne noen pdf</p>`
+      container.innerHTML = `<p>Kan ikke finne noen åpningstider</p>`
     }
   }
 
