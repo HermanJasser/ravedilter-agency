@@ -180,6 +180,13 @@ header img {
 /***************
      Footer
 ****************/
+
+.days-foot-container {
+    color: var(--white);
+    font-family: var(--roboto-slab);
+    font-size: 20px;
+}
+
 footer{
     background-image: url(./media/img/Bg_brown.webp);
     background-size:cover;
