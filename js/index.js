@@ -1,5 +1,6 @@
 
 let dayContainer = document.querySelector(".days-container");
+let dayFootContainer = document.querySelector(".days-foot-container");
 
 const map = {
     'Mandag': 1, 'Tirsdag': 2, 'Onsdag': 3, 'Torsdag': 4, 'Fredag': 5, 'Lørdag': 6, 'Søndag': 7 };
@@ -67,8 +68,8 @@ function populateAllDays(openingHours) {
   }
   
   function toggleView(data) {
-    daysContainer.innerHTML = ''; // Clear previous content
-  
+    dayContainer.innerHTML = ''; // Clear previous content
+    
     if (window.innerWidth > 849) {
       populateAllDays(data);
     } else {
