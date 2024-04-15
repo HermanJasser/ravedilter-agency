@@ -62,6 +62,10 @@ color: var(--white);
 transform: scale(1.03);
 }
 
+main{
+    overflow: hidden;
+}
+
 
 /***************
      Header
