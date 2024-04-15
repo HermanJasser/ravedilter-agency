@@ -71,7 +71,7 @@ main{
      Header
 ****************/
 header {
-    background-image: url(./media/img/Bg_brown.png);
+    background-image: url(./media/img/Bg_brown.webp);
     background-size: 100%;
     background-repeat: no-repeat center;
     height: 114px;  
@@ -181,7 +181,7 @@ header img {
      Footer
 ****************/
 footer{
-    background-image: url(./media/img/Bg_brown.png);
+    background-image: url(./media/img/Bg_brown.webp);
     background-size:cover;
     background-repeat: no-repeat center;
  
@@ -239,7 +239,7 @@ footer{
     align-items: center;
     justify-content: center;
     color: white;
-    background-image: url(media/img/Bg_brown.png);
+    background-image: url(media/img/Bg_brown.webp);
     border-radius: 5px;
     padding: 20px;
     text-wrap: nowrap;
@@ -326,7 +326,7 @@ footer{
 }
 
 #card-background{
-    background-image: url(media/img/Bg_brown.png);
+    background-image: url(media/img/Bg_brown.webp);
     background-position: center;
     background-size: cover;
 }
@@ -346,7 +346,7 @@ footer{
 }
 
 .historie-card-bg{
-    background-image: url(media/img/Bg_brown.png);
+    background-image: url(media/img/Bg_brown.webp);
     background-size: cover;
     background-position: center;
 }
@@ -386,7 +386,7 @@ footer{
 }
 
 .historie-box{
-    background-image: url(media/img/Bg_brown.png);
+    background-image: url(media/img/Bg_brown.webp);
     background-size: cover;
     background-position: center;
 }
@@ -788,7 +788,7 @@ iframe {
 }
 
 .historie-card-bg{
-    background-image: url(media/img/Bg_brown.png);
+    background-image: url(media/img/Bg_brown.webp);
     background-position: center;
     background-size: cover;
 }
@@ -829,7 +829,7 @@ iframe {
 .historie-box{
     display: flex;
     justify-content: center;
-    background-image: url(media/img/Bg_brown.png);
+    background-image: url(media/img/Bg_brown.webp);
     background-size: cover;
     background-position: center;
 }
@@ -918,7 +918,7 @@ iframe {
      Header
 ****************/
 header {
-    background-image: url(./media/img/Bg_brown.png);
+    background-image: url(./media/img/Bg_brown.webp);
     background-size: 100%;
     background-repeat: no-repeat center;
     height: 114px;  
@@ -1022,7 +1022,7 @@ header img {
 }
 
 .historie-card-bg{
-    background-image: url(media/img/Bg_brown.png);
+    background-image: url(media/img/Bg_brown.webp);
     background-position: center;
     background-size: cover;
 }
@@ -1062,7 +1062,7 @@ header img {
 .historie-box{
     display: flex;
     justify-content: center;
-    background-image: url(media/img/Bg_brown.png);
+    background-image: url(media/img/Bg_brown.webp);
     background-size: cover;
     background-position: center;
 }
