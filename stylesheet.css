@@ -226,7 +226,12 @@ footer{
 }
 
 .facebook-icon{
+    margin-top: 20px;
     width: 40px;
+}
+
+.laget-av {
+    margin: var(--inline-margin-phone);
 }
 
 /***************
@@ -253,7 +258,7 @@ footer{
     background-image: url(media/img/Bg_brown.webp);
     border-radius: 5px;
     padding: 20px;
-    text-wrap: nowrap;
+    white-space: nowrap;
     filter: drop-shadow(5px 5px 5px #000000);
 }
 
