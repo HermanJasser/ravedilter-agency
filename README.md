@@ -1,6 +1,6 @@
 # ravedilter-agency
 
-Git Pages: https://hermanjasser.github.io/ravedilter-agency/
+Webpage: https://raevedilter.no/
 
 ![image](https://github.com/HermanJasser/folder-for-images/blob/main/img/raevedilter-screenshot.png)
 
