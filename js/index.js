@@ -17,7 +17,7 @@ async function getDays(container){
         return map[a.day] - map[b.day];
      });
 
-      console.log(apiResult, map);
+      //console.log(apiResult, map);
       toggleView(apiResult);
     } catch (error){
       console.error("Error message: " + error)
